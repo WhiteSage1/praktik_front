@@ -1,0 +1,166 @@
+.login {
+  width: 100%;
+  min-height: calc(100vh - 24px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background: linear-gradient(180deg, #a7c9ef 0%, #8ab3e3 100%);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.login__card {
+  width: 100%;
+  max-width: 420px;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 12px;
+  box-shadow: 0 22px 60px rgba(18, 58, 111, 0.12);
+  padding: 28px;
+  border: 1px solid rgba(100, 135, 182, 0.12);
+}
+
+.login__title {
+  font-size: 22px;
+  color: #16304f;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.login__form {
+  margin-top: 6px;
+}
+
+.login__label {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #29445f;
+  font-weight: 600;
+}
+
+.login__input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #c8d7ee;
+  background: #fff;
+  outline: none;
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+.login__input:focus {
+  border-color: #2e7aed;
+  box-shadow: 0 0 0 6px rgba(46, 122, 237, 0.08);
+}
+
+.login__actions {
+  display: flex;
+  align-items: center;
+  margin-top: 18px;
+  gap: 10px;
+  justify-content: center;
+}
+
+.login__btn {
+  border: 0;
+  border-radius: 999px;
+  padding: 10px 18px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.login__btn--primary {
+  color: #fff;
+  background: linear-gradient(135deg, #2e7aed, #1f5fca);
+  box-shadow: 0 10px 24px rgba(46, 122, 237, 0.28);
+}
+
+.login__btn--primary:hover:not(:disabled) {
+  transform: translateY(-1px);
+}
+
+.login__footer {
+  margin-top: 14px;
+  text-align: center;
+  color: #547195;
+}
+
+.login__error {
+  width: 100%;
+  margin: 0 0 12px 0;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.98);
+  color: #a63f45;
+  border: 1px solid rgba(166, 63, 69, 0.18);
+  box-shadow: 0 10px 28px rgba(20, 54, 98, 0.06);
+  font-weight: 600;
+}
+
+.errmsg {
+  display: block;
+}
+
+.offscreen {
+  position: absolute;
+  left: -9999px;
+}
+
+@media (max-width: 720px) {
+  .login {
+    padding: 18px 12px 32px;
+  }
+
+  .login__card {
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  .login__actions { justify-content: stretch; }
+
+  .login__btn { width: 100%; }
+}
+
+/* Styles for the "Trust this device" checkbox */
+.login__persist {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+.login__persist .login__label {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #29445f;
+  cursor: pointer;
+}
+
+.login__persist .login__checkbox {
+  -webkit-appearance: auto;
+  appearance: auto;
+  width: 18px;
+  height: 18px;
+  border-radius: 6px;
+  border: 2px solid #c8d7ee;
+  background: #fff;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  transition: transform .08s ease, box-shadow .15s ease;
+  accent-color: #2e7aed;
+}
+
+.login__persist .login__checkbox:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(46,122,237,0.08);
+}
+
+.login__persist .login__checkbox:focus {
+  outline: none;
+  box-shadow: 0 0 0 6px rgba(46,122,237,0.08);
+}

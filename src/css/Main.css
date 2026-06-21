@@ -1,0 +1,90 @@
+/* Main and Dashboard styles */
+
+.dash-container {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: 20px;
+}
+
+.dashboard-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #fff;
+	padding: 16px 20px;
+	border-radius: 10px;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.dashboard-title {
+	font-size: 2rem;
+	color: #16304f;
+	font-weight: 700;
+	margin: 0 0 6px 0;
+}
+
+.user-card {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.user-avatar {
+	width: 56px;
+	height: 56px;
+	border-radius: 50%;
+	background: linear-gradient(135deg,#699deb,#2e7aed);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	font-weight: 700;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.user-info {
+	display: flex;
+	flex-direction: column;
+}
+
+.user-name { font-weight: 700; color: #222; }
+.user-meta { color: #666; font-size: .9rem; }
+
+.user-actions { display: flex; gap: 10px; align-items: center; }
+
+.btn-primary, .btn-secondary, .btn-success { border: none; padding: 8px 12px; border-radius: 6px; cursor: pointer; color: #fff; font-weight: 600; }
+.btn-primary { background-color: #1976d2; }
+.btn-primary:hover { background-color: #125a9c; }
+.btn-secondary { background-color: #2e7aed; }
+.btn-secondary:hover { background-color: #1b5fc4; }
+
+.btn-success { background-color: #66bb6a; }
+.btn-success:hover { background-color: #43a047; }
+
+.dashboard-body { display: flex; gap: 20px; align-items: flex-start; margin-top: 10px; }
+.user-column { width: 260px; background: #fff; padding: 14px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.06); }
+.posts-column { flex: 1; }
+
+.small { color: #666; font-size: 0.95rem; }
+
+.no-posts { padding: 18px; color: #666; background: #fff; border-radius: 8px; box-shadow: 0 1px 4px rgba(0,0,0,0.04); }
+
+/* Section titles used in dashboard */
+.section-title {
+	font-size: 1.375rem;
+	color: #16304f;
+	font-weight: 700;
+	margin: 0 0 12px 0;
+}
+
+.posts-column .posts-list {
+	margin-top: 6px;
+}
+
+/* Dash layout wrapper (simple spacing) */
+.dash-layout { display: flex; flex-direction: column; gap: 12px; padding: 14px; }
+.dash-top { background: transparent; padding: 0 6px; }
+.dash-wrap { display: block; }
+

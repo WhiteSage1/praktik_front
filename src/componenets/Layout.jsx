@@ -3,7 +3,7 @@ import Navigation from '../componenets/Navigation'
 
 const Layout = () => {
     return (
-        <div style={{ 'background-color': '#b46d6d' }}>
+        <div className="app">
             <Navigation />
             <main>
                 <Outlet />

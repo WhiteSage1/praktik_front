@@ -1,0 +1,59 @@
+
+.notfound{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	padding: 2rem;
+	background: linear-gradient(135deg, #699deb 0%, #94b7ec 100%);
+	color: #ffffff;
+	font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+	text-align: center;
+}
+
+.notfound-content{
+	max-width: 680px;
+	width: 100%;
+	padding: 2.25rem;
+	background: rgba(255,255,255,0.04);
+	border-radius: 12px;
+	box-shadow: 0 8px 30px #133f80a5;
+	backdrop-filter: blur(6px) saturate(120%);
+}
+
+.nf-code{
+	font-size: clamp(3.5rem, 12vw, 8rem);
+	margin: 0;
+	line-height: 0.9;
+	font-weight: 700;
+	color: #fff;
+	text-shadow: 0 6px 24px #133f80a5;
+}
+
+.nf-message{
+	margin: 0.75rem 0 1.25rem;
+	font-size: 1.125rem;
+	color: rgba(255,255,255,0.9);
+}
+
+.nf-home{
+	display: inline-block;
+	padding: 0.6rem 1rem;
+	border-radius: 10px;
+	background: #ffffff;
+	color: #0f172a;
+	text-decoration: none;
+	font-weight: 600;
+	box-shadow: 0 8px 20px #133f80a5;
+	transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.nf-home:hover{
+	transform: translateY(-3px);
+	box-shadow: 0 14px 30px #133f80a5;
+}
+
+@media (max-width: 520px){
+	.notfound-content{ padding: 1.25rem }
+	.nf-message{ font-size: 1rem }
+}

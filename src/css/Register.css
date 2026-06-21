@@ -1,0 +1,172 @@
+.register {
+  width: 100%;
+  min-height: calc(100vh - 24px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background: linear-gradient(180deg, #a7c9ef 0%, #8ab3e3 100%);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.register__card {
+  width: 100%;
+  max-width: 420px;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 12px;
+  box-shadow: 0 22px 60px rgba(18, 58, 111, 0.12);
+  padding: 28px;
+  border: 1px solid rgba(100, 135, 182, 0.12);
+}
+
+.register__title {
+  font-size: 22px;
+  color: #16304f;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.register__form {
+  margin-top: 6px;
+}
+
+.register__label {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #29445f;
+  font-weight: 600;
+}
+
+.register__label--inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.register__input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #c8d7ee;
+  background: #fff;
+  outline: none;
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+.register__input:focus {
+  border-color: #2e7aed;
+  box-shadow: 0 0 0 6px rgba(46, 122, 237, 0.08);
+}
+
+.register__input--invalid {
+  border-color: #d66b6b;
+  box-shadow: 0 0 0 4px rgba(214, 107, 107, 0.1);
+}
+
+.register__actions {
+  display: flex;
+  align-items: center;
+  margin-top: 18px;
+  gap: 10px;
+  justify-content: center;
+}
+
+.register__btn {
+  border: 0;
+  border-radius: 999px;
+  padding: 10px 18px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.register__btn:disabled {
+  opacity: 0.62;
+  cursor: not-allowed;
+}
+
+.register__btn--primary {
+  color: #fff;
+  background: linear-gradient(135deg, #2e7aed, #1f5fca);
+  box-shadow: 0 10px 24px rgba(46, 122, 237, 0.28);
+}
+
+.register__btn--primary:hover:not(:disabled) {
+  transform: translateY(-1px);
+}
+
+.register__persist {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+.register__checkbox {
+  -webkit-appearance: auto;
+  appearance: auto;
+  width: 18px;
+  height: 18px;
+  border-radius: 6px;
+  border: 2px solid #c8d7ee;
+  background: #fff;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  transition: transform .08s ease, box-shadow .15s ease;
+  accent-color: #2e7aed;
+}
+
+.register__checkbox:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(46,122,237,0.08);
+}
+
+.register__checkbox:focus {
+  outline: none;
+  box-shadow: 0 0 0 6px rgba(46,122,237,0.08);
+}
+
+.register__footer {
+  margin-top: 14px;
+  text-align: center;
+  color: #547195;
+}
+
+.register__error {
+  width: 100%;
+  margin: 0 0 12px 0;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.98);
+  color: #a63f45;
+  border: 1px solid rgba(166, 63, 69, 0.18);
+  box-shadow: 0 10px 28px rgba(20, 54, 98, 0.06);
+  font-weight: 600;
+}
+
+.offscreen {
+  position: absolute;
+  left: -9999px;
+}
+
+@media (max-width: 720px) {
+  .register {
+    padding: 18px 12px 32px;
+  }
+
+  .register__card {
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  .register__actions {
+    justify-content: stretch;
+  }
+
+  .register__btn {
+    width: 100%;
+  }
+}

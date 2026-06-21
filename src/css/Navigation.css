@@ -1,0 +1,136 @@
+.nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #699deb;
+    padding: 10px 5%;
+    border-radius: 10px;
+}
+
+.nav > .logo {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.nav > .logo > .icon {
+    width: 65px;
+}
+
+.nav > .logo > h2 {
+    font-size: 28px;
+    font-weight: 600;
+    font-style: italic;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav > ul {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    gap: 30px;
+}
+
+.nav > ul > li {
+    display: inline-block;
+    margin: 0 20px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.nav > ul > li > a:hover {
+    color: #2e7aed;
+}
+
+.nav > ul > li > a {
+    color: #fff;
+    text-decoration: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.nav > .login_register {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav > .login_register > ul {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    gap: 20px;
+}
+
+.nav > .login_register > ul > li {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: #699deb00;
+    border: 1px solid #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.nav > .login_register > ul > li:hover {
+    background-color: #2e7aed;
+    color: #fff;
+    border: 1px solid #2e7aed;
+}
+
+.nav > .login_register > ul > li > a {
+    color: #fff;
+    text-decoration: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav > .login_register > .toggle {
+    width: 45px;
+    cursor: pointer;
+}
+
+/* Logged-in user display (username + logout) */
+.nav__user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav__username {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 6px;
+    background-color: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.12);
+}
+
+.nav__logout {
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.nav__logout:hover:not(:disabled) {
+    background-color: #2e7aed;
+    color: #fff;
+    border-color: #2e7aed;
+}
+
+.nav__logout:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
