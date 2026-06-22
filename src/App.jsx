@@ -13,6 +13,7 @@ import EditPost from './features/posts/EditPost'
 import NewPost from './features/posts/NewPost'
 import Prefetch from './features/auth/Prefetch'
 import PersistLogin from './features/auth/PersistLogin'
+import AdminPanel from './pages/AdminPanel'
 import '../src/css/index.css'
 import NotFound from './pages/404'
 
@@ -42,7 +43,9 @@ function App() {
                 <Route path="new" element={<NewPost />} />
               </Route>
 
-              
+              <Route path="admin" element={<AdminPanel />}/>
+                {/* <Route index element={<AdminPanel />} /> */}
+              {/* </Route> */}
 
             </Route>
           </Route>

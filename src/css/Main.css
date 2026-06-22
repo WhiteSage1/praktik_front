@@ -54,11 +54,13 @@
 
 .user-actions { display: flex; gap: 10px; align-items: center; }
 
-.btn-primary, .btn-secondary, .btn-success { border: none; padding: 8px 12px; border-radius: 6px; cursor: pointer; color: #fff; font-weight: 600; }
+.btn-primary, .btn-admin, .btn-success { border: none; padding: 8px 12px; border-radius: 6px; cursor: pointer; color: #fff; font-weight: 600; }
 .btn-primary { background-color: #1976d2; }
 .btn-primary:hover { background-color: #125a9c; }
-.btn-secondary { background-color: #2e7aed; }
-.btn-secondary:hover { background-color: #1b5fc4; }
+.btn-admin { 
+	background-color: #ed942ecb;
+}
+.btn-admin:hover { background-color: #c46d1b; }
 
 .btn-success { background-color: #66bb6a; }
 .btn-success:hover { background-color: #43a047; }

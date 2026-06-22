@@ -31,6 +31,11 @@ const Main = () => {
 
         {user && (
           <div className="user-actions">
+            {user?.role == "admin" && (
+              <Link to={`/dash/admin`}>
+                <button className="btn-admin">Admin panel</button>
+              </Link>
+            )}
             <Link to={`/dash/users/${user.id}`}>
               <button className="btn-primary">Edit Profile</button>
             </Link>

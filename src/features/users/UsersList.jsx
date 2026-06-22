@@ -24,7 +24,7 @@ const UsersList = () => {
         content = <p>Loading...</p>
     } else if (isSuccess) {
         content = (
-            <ul>
+            <ul className="user-list">
                 {users?.length ? users.map(user => (
                     <User key={user.id} userId={user.id} />
                 )) : <p>No users found.</p>}
