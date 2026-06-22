@@ -1,0 +1,12 @@
+Admin:
+
+Username: Admin
+Password: 123456
+
+Users:
+
+Username: Nicky
+Password: 123456
+
+Username: Jonas
+Password: 123456
